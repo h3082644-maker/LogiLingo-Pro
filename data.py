@@ -70,3 +70,19 @@ words = [
         "email_body": "Urgent,\n\nShipment #9920 is currently on hold. Please send the original commercial invoice to the customs broker immediately.\n\nThanks,"
     }
 ]
+work_emails = [
+    {
+        "id": 1,
+        "subject": "تحديث الشحنة",
+        "body": "Kindly provide the latest update regarding the shipment status.",
+        "ar_meaning": "يرجى تزويدنا بآخر تحديث بخصوص حالة الشحنة.",
+        "keywords": ["Shipment", "Update", "Status"]
+    },
+    {
+        "id": 2,
+        "subject": "طلب تعديل عنوان",
+        "body": "We need to change the delivery address for order #4592 due to site closure.",
+        "ar_meaning": "نحتاج لتغيير عنوان التسليم للطلب رقم 4592 بسبب إغلاق الموقع.",
+        "keywords": ["Delivery address", "Order", "Site closure"]
+    }
+]
