@@ -61,7 +61,7 @@ words = [
     },
     {
         "en": "Forklift", "ar": "رافعة شوكية", "pronunciation": "فُورْك لِفْت",
-        "ex_en": "The worker is driving the forklift in the warehouse.", "ex_ar": "العامل يقود الرافعة الشوكية في المستودع."
+        "ex_en": "The worker is driving the forklift in the warehouse.", "ex_ar": "العامل يقود الرافعة الشوكية in المستودع."
     },
     {
         "en": "Lead Time", "ar": "فترة التوريد / وقت التنفيذ", "pronunciation": "لِيدْ تَايْم",
@@ -73,7 +73,7 @@ words = [
     },
     {
         "en": "Quotation", "ar": "عرض سعر", "pronunciation": "كُوتَيْشَن",
-        "ex_en": "Can you send me a quotation for shipping 10 pallets?", "ex_ar": "هل يمكنك إرسال عرض سعر لشحن 10 طبليات?"
+        "ex_en": "Can you send me a quotation for shipping 10 pallets?", "ex_ar": "هل يمكنك إرسال عرض سعر لشحن 10 طبليات؟"
     },
     {
         "en": "Invoice", "ar": "فاتورة", "pronunciation": "إِنْفُويْس",
@@ -98,19 +98,5 @@ words = [
     {
         "en": "Waybill", "ar": "بوليصة نقل", "pronunciation": "وَيْبِل",
         "ex_en": "Make sure the air waybill is attached to the package.", "ex_ar": "تأكد من إرفاق بوليصة النقل الجوي بالطرد."
-    }
-]
-
-# قسم الإيميلات الذي كان ناقصاً وتسبب في الخطأ الأسود
-emails = [
-    {
-        "title": "تأخر الشحنة (Shipment Delay)",
-        "en": "Dear Client,\n\nWe regret to inform you that your shipment is delayed due to bad weather.\n\nBest regards,\nLogistics Team",
-        "ar": "عزيزي العميل،\n\nنأسف لإبلاغك بأن شحنتك قد تأخرت بسبب سوء الأحوال الجوية.\n\nأطيب التحيات،\nفريق اللوجستيات"
-    },
-    {
-        "title": "إشعار وصول (Arrival Notice)",
-        "en": "Dear Customer,\n\nYour cargo has arrived at the destination port and is ready for pickup.\n\nRegards,\nOperations Dept",
-        "ar": "عزيزي العميل،\n\nوصلت شحنتك إلى ميناء الوصول وهي جاهزة للاستلام.\n\nتحياتي،\nقسم العمليات"
     }
 ]
