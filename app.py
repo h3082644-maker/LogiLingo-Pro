@@ -123,3 +123,25 @@ elif choice == "📚 التعلم":
                 st.session_state.xp += 20
             else:
                 st.warning("هناك اختلاف بسيط، راجع الإملاء!")
+
+elif choice == "🤖 AI Mode":
+    st.title("🤖 المساعد اللوجستي الذكي")
+    st.write("اكتب رسالتك بالعربية وسأقوم بصياغتها لك كإيميل احترافي:")
+    
+    # مربع النص لاستقبال طلب المستخدم
+    user_request = st.text_input("مثال: اطلب تحديث حالة الشحنة الموجهة للمستودع")
+    
+    if st.button("صغ الإيميل"):
+        if user_request:
+            # هنا سنقوم ببرمجة الربط مع نموذج ذكاء اصطناعي (أو استخدام منطق قوالب ذكي)
+            with st.spinner("جاري صياغة الإيميل..."):
+                # محاكاة لعمل الـ AI
+                ai_response = f"Dear Team,\n\nI am writing to request an update regarding the status of the shipment currently destined for our warehouse.\n\nBest regards,\nLogistics Team"
+                
+                st.subheader("الإيميل الاحترافي:")
+                st.code(ai_response, language='text')
+                
+                # زر نسخ الإيميل
+                st.button("نسخ الإيميل 📋")
+        else:
+            st.warning("يرجى كتابة طلبك أولاً.")
