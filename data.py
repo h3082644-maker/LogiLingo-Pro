@@ -65,4 +65,52 @@ words = [
     },
     {
         "en": "Lead Time", "ar": "فترة التوريد / وقت التنفيذ", "pronunciation": "لِيدْ تَايْم",
-        "ex_en": "The lead time for this product is 3 weeks.", "ex_ar": "فترة التوريد لهذا المنتج هي
+        "ex_en": "The lead time for this product is 3 weeks.", "ex_ar": "فترة التوريد لهذا المنتج هي 3 أسابيع."
+    },
+    {
+        "en": "Out of Stock", "ar": "نفد من المخزون", "pronunciation": "آوْت أُوف سْتُوك",
+        "ex_en": "I am sorry, this item is currently out of stock.", "ex_ar": "أنا آسف، هذا العنصر غير متوفر في المخزون حالياً."
+    },
+    {
+        "en": "Quotation", "ar": "عرض سعر", "pronunciation": "كُوتَيْشَن",
+        "ex_en": "Can you send me a quotation for shipping 10 pallets?", "ex_ar": "هل يمكنك إرسال عرض سعر لشحن 10 طبليات?"
+    },
+    {
+        "en": "Invoice", "ar": "فاتورة", "pronunciation": "إِنْفُويْس",
+        "ex_en": "Please find the attached commercial invoice.", "ex_ar": "يرجى الاطلاع على الفاتورة التجارية المرفقة."
+    },
+    {
+        "en": "Procurement", "ar": "المشتريات", "pronunciation": "بْرُوكْيُورْمِينْت",
+        "ex_en": "The procurement team is looking for new suppliers.", "ex_ar": "فريق المشتريات يبحث عن موردين جدد."
+    },
+    {
+        "en": "Courier", "ar": "ساعي البريد / شركة التوصيل", "pronunciation": "كُورِيَر",
+        "ex_en": "The courier will deliver the documents today.", "ex_ar": "شركة التوصيل ستقوم بتسليم المستندات اليوم."
+    },
+    {
+        "en": "Distribution Center", "ar": "مركز التوزيع", "pronunciation": "دِسْتْرِبْيُوشَن سِينْتَر",
+        "ex_en": "Goods are sorted at the distribution center before delivery.", "ex_ar": "يتم فرز البضائع في مركز التوزيع قبل تسليمها."
+    },
+    {
+        "en": "Surcharge", "ar": "رسوم إضافية", "pronunciation": "سِيرْتْشَارْج",
+        "ex_en": "There is a fuel surcharge added to the final bill.", "ex_ar": "توجد رسوم وقود إضافية مضافة إلى الفاتورة النهائية."
+    },
+    {
+        "en": "Waybill", "ar": "بوليصة نقل", "pronunciation": "وَيْبِل",
+        "ex_en": "Make sure the air waybill is attached to the package.", "ex_ar": "تأكد من إرفاق بوليصة النقل الجوي بالطرد."
+    }
+]
+
+# قسم الإيميلات الذي كان ناقصاً وتسبب في الخطأ الأسود
+emails = [
+    {
+        "title": "تأخر الشحنة (Shipment Delay)",
+        "en": "Dear Client,\n\nWe regret to inform you that your shipment is delayed due to bad weather.\n\nBest regards,\nLogistics Team",
+        "ar": "عزيزي العميل،\n\nنأسف لإبلاغك بأن شحنتك قد تأخرت بسبب سوء الأحوال الجوية.\n\nأطيب التحيات،\nفريق اللوجستيات"
+    },
+    {
+        "title": "إشعار وصول (Arrival Notice)",
+        "en": "Dear Customer,\n\nYour cargo has arrived at the destination port and is ready for pickup.\n\nRegards,\nOperations Dept",
+        "ar": "عزيزي العميل،\n\nوصلت شحنتك إلى ميناء الوصول وهي جاهزة للاستلام.\n\nتحياتي،\nقسم العمليات"
+    }
+]
