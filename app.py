@@ -100,3 +100,26 @@ elif choice == "📚 التعلم":
         st.rerun()
         st.session_state.xp += 10
         st.success("+10 XP")
+        elif choice == "📧 وضع العمل":
+    st.title("📧 محاكي إيميلات العمل")
+    
+    # اختيار إيميل عشوائي لليوم
+    email = random.choice(work_emails)
+    
+    st.info("💡 مهمة اليوم: اقرأ الإيميل التالي وحاول فهم معناه:")
+    st.markdown(f"**{email['body']}**")
+    
+    if st.button("كشف المعنى"):
+        st.success(f"الترجمة: {email['ar_meaning']}")
+        
+        st.write("---")
+        st.write("✍️ الآن، حاول كتابة الإيميل بنفسك (اختبار الذاكرة):")
+        user_text = st.text_area("اكتب الإيميل هنا:")
+        
+        if st.button("تحقق من الكتابة"):
+            if user_text.strip() == email['body']:
+                st.balloons()
+                st.success("ممتاز! تطابق تام. +20 XP")
+                st.session_state.xp += 20
+            else:
+                st.warning("هناك اختلاف بسيط، راجع الإملاء!")
