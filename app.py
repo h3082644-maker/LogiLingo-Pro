@@ -10,7 +10,7 @@ st.set_page_config(
     layout="centered"
 )
 
-# تحسين التصميم عبر CSS مخصص لإلغاء الهوامش الزائدة وترتيب النصوص من اليمين لليسار
+# تحسين التصميم عبر CSS مخصص لإلغاء الهوامش الزائدة وترتيب النصوص
 st.markdown("""
     <style>
     .main-title { font-size: 2.6rem; font-weight: bold; text-align: center; color: #FF4B4B; margin-bottom: 0.5rem; }
@@ -18,7 +18,7 @@ st.markdown("""
     .card-label { font-size: 0.9rem; color: #888888; font-weight: bold; margin-bottom: 2px; }
     .card-content { font-size: 1.4rem; font-weight: bold; margin-bottom: 15px; }
     </style>
-""", unsafe_index=True)
+""", unsafe_allow_html=True)
 
 # العنوان الرئيسي
 st.markdown("<div class='main-title'>📦 LogiLingo Pro</div>", unsafe_allow_html=True)
