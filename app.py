@@ -42,5 +42,61 @@ elif choice == "📚 التعلم":
         st.session_state.hearts -= 1
         st.rerun()
     if col2.button("✅ عرفتها!"):
+
+        # 1. قائمة المصطلحات اللوجستية الخاصة بك
+logistics_words = [
+    {"en": "Shipment", "ar": "شحنة"},
+    {"en": "Warehouse", "ar": "مستودع"},
+    {"en": "Inventory", "ar": "مخزون"},
+    {"en": "Hub", "ar": "مركز توزيع"},
+    {"en": "Carrier", "ar": "ناقل"},
+    {"en": "Manifest", "ar": "بيان الشحنة"},
+    {"en": "Reverse Shipment", "ar": "شحنة مرتجعة"},
+    {"en": "Last Mile", "ar": "الميل الأخير"},
+    {"en": "POD", "ar": "إثبات التسليم"},
+    {"en": "COD", "ar": "الدفع عند الاستلام"},
+    {"en": "Fulfillment", "ar": "تجهيز الطلبات"}
+]
+
+# 2. إدارة الحالة للتنقل
+if 'current_word_idx' not in st.session_state:
+    st.session_state.current_word_idx = 0
+
+# 3. قسم التعلم المطور
+elif choice == "📚 التعلم":
+    st.title("📚 مستوى: عمليات الشحن")
+    
+    # التقدم (Progress Bar)
+    progress = (st.session_state.current_word_idx + 1) / len(logistics_words)
+    st.progress(progress)
+    
+    word_data = logistics_words[st.session_state.current_word_idx]
+
+    # تصميم البطاقة التفاعلية
+    st.markdown(f"""
+    <div class="card-container">
+        <div class="card">
+            <div class="word-en">{word_data['en']}</div>
+            <div class="word-ar">{word_data['ar']}</div>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+    
+    st.write("")
+    
+    # أزرار التفاعل مع منطق التنقل
+    col1, col2 = st.columns(2)
+    
+    if col1.button("❌ لم أعرف"):
+        st.session_state.hearts -= 1
+        st.error("حاول التركيز، القلوب تنقص!")
+        st.rerun()
+        
+    if col2.button("✅ عرفتها!"):
+        st.session_state.xp += 10
+        # الانتقال للكلمة التالية
+        st.session_state.current_word_idx = (st.session_state.current_word_idx + 1) % len(logistics_words)
+        st.success("+10 XP - أحسنت!")
+        st.rerun()
         st.session_state.xp += 10
         st.success("+10 XP")
